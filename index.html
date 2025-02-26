@@ -20,16 +20,20 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-						<span class="icon fa-camera"></span>
+						<!-- Make sure Font Awesome is included in the <head> section -->
+						<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+						<!-- Camera icon inside a span tag -->
+						<span class="icon fas fa-camera"></span>
+
 						</div>
 						<div class="content">
 							<div class="inner">
 								<h1>Brian Kersellius</h1>
-								<h1>Brian Kersellius</h1>
 								<p>
-								I’m a digital marketer who blends creativity with data to craft impactful campaigns. 
-								I help businesses grow and connect with their audience through SEO, paid ads, and content strategy. 
-								Always exploring new trends and tools, I’m driven by results and excited about the future of digital marketing.
+								I am a digital marketer who blends creativity with data to craft impactful campaigns. 
+								I help businesses grow and connect with their audience through SEO, paid ads, and content strategy.
+								I am always exploring new trends and tools, am driven by results,  and excited about the future of digital marketing.
 								</p>
 
 							</div>
@@ -52,6 +56,11 @@
 							<article id="intro">
 								<h2 class="major">About Me</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<!-- New Code for Image with Text Overlay -->
+								<div class="image-container">
+								<!-- Image -->
+								<img src="images/pic03.jpg" alt="Image Description">
+								
 							<p>My name is Brian Kersellius, and I am a digital marketing and sales specialist.</p>
 
 							<p>
@@ -74,7 +83,7 @@
 								<section id="case-studies">
 								<h3 class="major">Case Studies</h3>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Here are some of the most notable case studies I've worked on, showcasing my expertise in data analysis, digital marketing, and other relevant skills.</p>
+								<p>Here are some of the most notable case studies I've worked on, showcasing my expertise in, digital marketing, data analysis, and other relevant skills.</p>
 								<!-- Add case study details as needed -->
 							</section>	
 							 
@@ -82,7 +91,20 @@
 								<section id="relevant-course-work">
 								<h3 class="major">Relevant Course Work</h3>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>This section includes relevant courses I've completed that align with my career goals and expertise in the field of data analytics and digital marketing.</p>
+								<!-- Text on top of the image -->
+								<div class="text-overlay">
+								This section includes relevant course work I've completed during University.
+								</div>
+								</div>
+								<!-- Links to PDFs -->
+								<div class="pdf-links">
+								<ul>
+								<li><a href="https://drive.google.com/file/d/16y67zHWn35ORjOCDWwZQeGreDd-NpgSG/view?usp=sharing" target="_blank" style="color: #007bff;">International Marketing Plan - Kite Patch</a></li>
+								<li><a href="https://drive.google.com/file/d/1Mksa8t1vEmdidMsbG92gB4vt2E_L2_Qn/view?usp=sharing" target="_blank" style="color: #007bff;">Eve Written Report</a></li>
+								<li><a href="https://drive.google.com/file/d/1cUCgjQGaYD_xDRbwXhNDMJR59F1GIcn_/view?usp=sharing" target="_blank" style="color: #007bff;">Gravity Outdoors LLC. Presentation</a></li>
+								<li><a href="https://drive.google.com/file/d/1Hfmgwixi0eRqbMajpwh-TBmvxGVHJYpN/view?usp=drive_link" target="_blank" style="color: #007bff;">Philosophy Essay - John Locke Vs David Hume</a></li>
+								</ul>
+								</div>
 								<!-- Add course work details as needed -->
 							</section>
 							</article>
@@ -91,9 +113,8 @@
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							<!-- Embed Google Docs Resume -->
+							<iframe src="https://docs.google.com/document/d/e/1Rr-Rt7kSi33p8mZcRd_iNjLL8zwQtDRM/pub?embedded=true" width="100%" height="600px" style="border:none;"></iframe>
 							</article>
 
 						<!-- Contact -->
@@ -101,24 +122,31 @@
 								<h2 class="major">Contact</h2>
 								<form method="post" action="#">
 									<div class="fields">
+										  <!-- Hidden Fields (you can keep these as placeholders, they are necessary for routing to Google Form) -->
+										<input type="hidden" name="entry.2005620554" value="">
+										<input type="hidden" name="entry.1045781291" value="">
+										<input type="hidden" name="entry.839337160" value="">
+										 <!-- Visible Name Field -->
+										
+										  <!-- Visible Email Field -->
 										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+										<label for="email">Email</label>
+										<input type="email" name="entry.9876543210" id="email" required />
 										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
+											
+										  <!-- Visible Message Field -->
 										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+										<label for="message">Message</label>
+										<textarea name="entry.1122334455" id="message" rows="4" required></textarea>
 										</div>
 									</div>
-									<ul class="actions">
+
+										<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
+									</form>
+									</article>
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -373,7 +401,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					<p class="copyright">&copy; Brian Kersellius. <a href="https://www.linkedin.com/in/brian-kersellius-43316b2a5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 					</footer>
 
 			</div>
